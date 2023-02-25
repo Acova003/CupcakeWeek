@@ -62,6 +62,7 @@ public class Main
         cupcakeMenu.add(redVelvet);
 
         cupcakeMenu.add(chocolate);
+
     }
 }
 class Cupcake{
@@ -88,4 +89,17 @@ class Chocolate extends Cupcake{
         System.out.println("A chocolate based cupcake, with chocolate frosting");
     }
     
+}
+class Drink{
+    public double price;
+
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice() {
+        this.price = price;
+    }
+    public void type() {
+        System.out.println("This is a drink.");
+    }
 }
