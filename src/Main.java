@@ -103,3 +103,14 @@ class Drink{
         System.out.println("This is a drink.");
     }
 }
+class Soda extends Drink{
+    public void type() {
+        System.out.println("A bottle os soda.");
+    }
+
+}
+class Milk extends Drink{
+    public void type(){
+        System.out.println("A bottle of milk");
+    }
+}
