@@ -68,6 +68,40 @@ public class Main
         Soda soda = new Soda();
         Milk milk = new Milk();
 
+        System.out.println("We are deciding on the price for our water. Here is the description: ");
+
+        water.type();
+
+        System.out.println("How much would you like to charge for water?" +
+                "\n(Input a numerical number taken to 2 decimal places)");
+
+        priceText = input.nextLine();
+
+        price = Double.parseDouble(priceText);
+
+        water.setPrice(price);
+
+        System.out.println("How much would you like to charge for soda?" +
+                "\n(Input a numerical number taken to 2 decimal places)");
+
+        priceText = input.nextLine();
+
+        price = Double.parseDouble(priceText);
+
+        soda.setPrice(price);
+
+        System.out.println("How much would you like to charge for milk?" +
+                "\n(Input a numerical number taken to 2 decimal places)");
+
+        priceText = input.nextLine();
+
+        price = Double.parseDouble(priceText);
+
+        milk.setPrice(price);
+
+        drinkMenu.add(water);
+        drinkMenu.add(soda);
+        drinkMenu.add(milk);
     }
 }
 class Cupcake{
@@ -101,7 +135,7 @@ class Drink{
     public double getPrice() {
         return price;
     }
-    public void setPrice() {
+    public void setPrice(double price) {
         this.price = price;
     }
     public void type() {
