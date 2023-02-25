@@ -1,7 +1,10 @@
+import java.util.ArrayList;
+
 public class Main{
     public static void main(String[] args){
 
     }
+
     class Cupcake{
         public double price;
 
@@ -25,5 +28,6 @@ public class Main{
         public void type (){
             System.out.println("A chocolate based cupcake, with chocolate frosting");
         }
+        
     }
 }
