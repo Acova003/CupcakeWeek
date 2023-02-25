@@ -63,6 +63,11 @@ public class Main
 
         cupcakeMenu.add(chocolate);
 
+        ArrayList<Drink> drinkMenu = new ArrayList<Drink>();
+        Drink water = new Drink();
+        Soda soda = new Soda();
+        Milk milk = new Milk();
+
     }
 }
 class Cupcake{
