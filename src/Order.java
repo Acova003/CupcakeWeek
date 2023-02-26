@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Order {
     public Order(ArrayList<Cupcake> cupcakeMenu, ArrayList<Drink>drinkMenu){
-        System.out.println("Hello customer. Would you like to place an order? (Y or N)");
+        System.out.println("\nHello customer. Would you like to place an order? (Y or N)");
 
 
         Scanner input = new Scanner(System.in);
@@ -18,8 +18,8 @@ public class Order {
         if (placeOrder.equalsIgnoreCase("Y")) {
             order.add(LocalDate.now());
             order.add(LocalTime.now());
-            System.out.println("Here is the menu.");
-            System.out.println("CUPCAKES:");
+            System.out.println("\nHere is the menu.");
+            System.out.println("\nCUPCAKES:");
             int itemNumber = 0;
 
             for (int index = 0; index < cupcakeMenu.size(); index++) {
@@ -27,8 +27,9 @@ public class Order {
                 System.out.println(itemNumber + ".");
                 cupcakeMenu.get(index).type();
                 System.out.println("Price: " + cupcakeMenu.get(index).getPrice());
-                System.out.println("\nDRINKS: ");
+                
             }
+            System.out.println("\nDRINKS: ");
             for (int i = 0; i < drinkMenu.size(); i++) {
                 itemNumber++;
                 System.out.println(itemNumber + ".");
@@ -38,36 +39,36 @@ public class Order {
             }
             boolean ordering = true;
             while (ordering == true) {
-                System.out.println("What would you like to order? Please use the number associated with each item to order.");
+                System.out.println("\nWhat would you like to order? Please use the number associated with each item to order.");
                 int orderChoice = input.nextInt();
                 input.nextLine();
 
                 if (orderChoice == 1) {
                     order.add(cupcakeMenu.get(0));
-                    System.out.println("Item added to order.");
+                    System.out.println("\nItem added to order.");
                 } else if (orderChoice == 2){
                     order.add(cupcakeMenu.get(1));
-                    System.out.println("Item added to order.");
+                    System.out.println("\nItem added to order.");
                 } else if (orderChoice == 3){
                     order.add(cupcakeMenu.get(2));
-                    System.out.println("Item added to order.");
+                    System.out.println("\nItem added to order.");
                 } else if (orderChoice == 4){
                     order.add(drinkMenu.get(0));
-                    System.out.println("Item added to order.");
+                    System.out.println("\nItem added to order.");
                 } else if (orderChoice == 5){
                     order.add(drinkMenu.get(1));
-                    System.out.println("Item added to order.");
+                    System.out.println("\nItem added to order.");
                 } else if (orderChoice == 6){
                     order.add(drinkMenu.get(2));
-                    System.out.println("Item added to order.");
+                    System.out.println("\nItem added to order.");
                 } else {
-                    System.out.println("Sorry, we don’t seem to have that on the menu.");
-                    System.out.println("Would you like to continue ordering? (Y/N)");
+                    System.out.println("\nSorry, we don’t seem to have that on the menu.");
+                }
+                System.out.println("\nWould you like to continue ordering? (Y/N)");
                     String continueOrder = input.nextLine();
                     if (!continueOrder.equalsIgnoreCase("Y")) {
                         ordering = false;
                     }
-                }
             }
         } else {
             System.out.println("Have a nice day then");
