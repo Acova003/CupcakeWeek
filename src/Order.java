@@ -72,15 +72,36 @@ public class Order {
             }
             System.out.println(order.get(0));
             System.out.println(order.get(1));
-            double subtotal = 0.0;
+            double subTotal = 0.0;
 
             for (int i = 2; i < order.size(); i++) {
                 if (order.get(i).equals(cupcakeMenu.get(0))) {
                     cupcakeMenu.get(0).type();
                     System.out.println(cupcakeMenu.get(0).getPrice());
-                    subtotal += cupcakeMenu.get(0).getPrice();
+                    subTotal += cupcakeMenu.get(0).getPrice();
+                } else if (order.get(i).equals(cupcakeMenu.get(1))) {
+                    cupcakeMenu.get(1).type();
+                    System.out.println(cupcakeMenu.get(1).getPrice());
+                    subTotal += cupcakeMenu.get(1).getPrice();
+                } else if (order.get(i).equals(cupcakeMenu.get(2))){
+                    cupcakeMenu.get(1).type();
+                    System.out.println(cupcakeMenu.get(1).getPrice());
+                    subTotal += cupcakeMenu.get(1).getPrice();
+                } else if (order.get(i).equals(drinkMenu.get(0))){
+                    drinkMenu.get(0).type();
+                    System.out.println(drinkMenu.get(0).getPrice());
+                    subTotal = subTotal + drinkMenu.get(0).getPrice();
+                } else if (order.get(i).equals(drinkMenu.get(1))){
+                    drinkMenu.get(1).type();
+                    System.out.println(drinkMenu.get(1).getPrice());
+                    subTotal = subTotal + drinkMenu.get(1).getPrice();
+                } else if (order.get(i).equals(drinkMenu.get(2))){
+                    drinkMenu.get(0).type();
+                    System.out.println(drinkMenu.get(2).getPrice());
+                    subTotal = subTotal + drinkMenu.get(2).getPrice();
                 }
             }
+            System.out.println("\n Your total is $" + subTotal);
         } else {
             System.out.println("Have a nice day then");
         }
