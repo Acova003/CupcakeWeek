@@ -142,12 +142,12 @@ class Drink{
         this.price = price;
     }
     public void type() {
-        System.out.println("This is a drink.");
+        System.out.println("A bottle of water.");
     }
 }
 class Soda extends Drink{
     public void type() {
-        System.out.println("A bottle os soda.");
+        System.out.println("A bottle of soda.");
     }
 
 }
