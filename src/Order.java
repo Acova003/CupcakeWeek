@@ -70,6 +70,17 @@ public class Order {
                         ordering = false;
                     }
             }
+            System.out.println(order.get(0));
+            System.out.println(order.get(1));
+            double subtotal = 0.0;
+
+            for (int i = 2; i < order.size(); i++) {
+                if (order.get(i).equals(cupcakeMenu.get(0))) {
+                    cupcakeMenu.get(0).type();
+                    System.out.println(cupcakeMenu.get(0).getPrice());
+                    subtotal += cupcakeMenu.get(0).getPrice();
+                }
+            }
         } else {
             System.out.println("Have a nice day then");
         }
