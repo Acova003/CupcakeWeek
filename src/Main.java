@@ -31,11 +31,11 @@ public class Main
 
         cupcake.setPrice(price);
 
-        System.out.println("We are deciding on the price for our red velvet cupcake. Here is the description: ");
+        System.out.println(\n"We are deciding on the price for our red velvet cupcake. Here is the description: ");
 
         redVelvet.type();
 
-        System.out.println("How much would you like to charge for the cupcake?" +
+        System.out.println("\nHow much would you like to charge for the cupcake?" +
                 "\n(Input a numerical number taken to 2 decimal places)");
 
         priceText = input.nextLine();
@@ -44,11 +44,11 @@ public class Main
 
         redVelvet.setPrice(price);
 
-        System.out.println("We are deciding on the price for our chocolate cupcake. Here is the description: ");
+        System.out.println("\nWe are deciding on the price for our chocolate cupcake. Here is the description: ");
 
         chocolate.type();
 
-        System.out.println("How much would you like to charge for the cupcake?" +
+        System.out.println("\nHow much would you like to charge for the cupcake?" +
                 "\n(Input a numerical number taken to 2 decimal places)");
 
         priceText = input.nextLine();
@@ -68,11 +68,11 @@ public class Main
         Soda soda = new Soda();
         Milk milk = new Milk();
 
-        System.out.println("We are deciding on the price for our water. Here is the description: ");
+        System.out.println("\nWe are deciding on the price for our water. Here is the description: ");
 
         water.type();
 
-        System.out.println("How much would you like to charge for water?" +
+        System.out.println("\nHow much would you like to charge for water?" +
                 "\n(Input a numerical number taken to 2 decimal places)");
 
         priceText = input.nextLine();
@@ -81,7 +81,7 @@ public class Main
 
         water.setPrice(price);
 
-        System.out.println("How much would you like to charge for soda?" +
+        System.out.println("\nHow much would you like to charge for soda?" +
                 "\n(Input a numerical number taken to 2 decimal places)");
 
         priceText = input.nextLine();
@@ -90,7 +90,7 @@ public class Main
 
         soda.setPrice(price);
 
-        System.out.println("How much would you like to charge for milk?" +
+        System.out.println("\nHow much would you like to charge for milk?" +
                 "\n(Input a numerical number taken to 2 decimal places)");
 
         priceText = input.nextLine();
