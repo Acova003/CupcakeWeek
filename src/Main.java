@@ -13,16 +13,16 @@ public class Main
 
         Chocolate chocolate = new Chocolate();
 
-        System.out.println("We are in the middle of creating the cupcake menu. We currently have three cupcakes on" +
+        System.out.println("\nWe are in the middle of creating the cupcake menu. We currently have three cupcakes on" +
                 "\nthe menu but we need to decide on pricing");
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("We are deciding on the price for our standard cupcake. Here is the description: ");
+        System.out.println("\nWe are deciding on the price for our standard cupcake. Here is the description: ");
 
         cupcake.type();
 
-        System.out.println("How much would you like to charge for the cupcake?" +
+        System.out.println("\nHow much would you like to charge for the cupcake?" +
                 "\n(Input a numerical number taken to 2 decimal places)");
 
         String priceText = input.nextLine();
