@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Order {
-    public Order(ArrayList<Cupcake> cakeMenu, ArrayList<Drink>drinkMenu){
+    public Order(ArrayList<Cupcake> cupcakeMenu, ArrayList<Drink>drinkMenu){
         System.out.println("Hello customer. Would you like to place an order? (Y or N)");
 
 
@@ -22,9 +22,11 @@ public class Order {
             System.out.println("CUPCAKES:");
             int itemNumber = 0;
 
-            for (int index = 0; index < cakeMenu.size(); index++) {
+            for (int index = 0; index < cupcakeMenu.size(); index++) {
                 itemNumber ++;
                 System.out.println(itemNumber);
+                cupcakeMenu.get(index).type();
+                System.out.println("Price: " + cupcakeMenu.get(index).getPrice());
             }
         } else {
             System.out.println("Have a nice day then");
