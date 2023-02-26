@@ -31,7 +31,7 @@ public class Main
 
         cupcake.setPrice(price);
 
-        System.out.println(\n"We are deciding on the price for our red velvet cupcake. Here is the description: ");
+        System.out.println("\nWe are deciding on the price for our red velvet cupcake. Here is the description: ");
 
         redVelvet.type();
 
