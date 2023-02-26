@@ -95,22 +95,20 @@ public class Order {
                     drinkMenu.get(0).type();
                     System.out.println(drinkMenu.get(0).getPrice());
                     subTotal = subTotal + drinkMenu.get(0).getPrice();
-                } else if (order.get(i).equals(drinkMenu.get(1))){
-                    drinkMenu.get(1).type();
-                    System.out.println(drinkMenu.get(1).getPrice());
-                    subTotal = subTotal + drinkMenu.get(1).getPrice();
                 } else if (order.get(i).equals(drinkMenu.get(2))){
-                    drinkMenu.get(0).type();
+                    drinkMenu.get(2).type();
+
                     System.out.println(drinkMenu.get(2).getPrice());
+
                     subTotal = subTotal + drinkMenu.get(2).getPrice();
                 }
             }
-            System.out.println("\n Your total is $" + subTotal);
-        } else {
+            System.out.println("$" + subTotal + "\n");
+            new CreateFile();
+            new WriteToFile(order);
+        } else{
             System.out.println("Have a nice day then");
         }
-
-
     }
 }
 
